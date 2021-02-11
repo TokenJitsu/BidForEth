@@ -66,7 +66,7 @@ App = {
             $('#account').html("Account:" + " " + result);
         })
 
-        web3.eth.getBalance("0x91CF84FFdb29Ca3B99c174D9842378D6CD6c2899", function(error, result) {
+        web3.eth.getBalance("0xd730d54B2402cD782439A30402122534EFf1Aa98", function(error, result) {
             var pot = web3.utils.fromWei(result, 'ether');
             $('#jackpot').html("Jackpot" + " " + pot.toString(8) + " " + "eth");
         })
