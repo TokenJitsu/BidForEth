@@ -32,8 +32,8 @@ class TransactionChecker {
     }
 
     // const account = web3.eth.getAccounts(function(error, result) {
-    //     $('#account').html("Account:" + " " + result);
-    // })
+    //     $('#current-winer').html("Account:" + " " + result);
+    // });
     let txChecker = new TransactionChecker(projectId, '0x91CF84FFdb29Ca3B99c174D9842378D6CD6c2899');
     setInterval(() => {
         txChecker.checkBlock();
