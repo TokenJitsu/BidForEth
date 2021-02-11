@@ -1520,6 +1520,13 @@ h1 {
     color: #983c61;
 }
 
+#block-data a {
+    font-family: "Josefin Sans", Helvetica, Arial, sans-serif;
+    font-size: 0.8rem;
+    line-height: 1rem;
+    color: #983c61;
+}
+
 @media screen and(max-width: 540px) {
     #account p {
         font-family: "Josefin Sans", Helvetica, Arial, sans-serif;
