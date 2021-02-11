@@ -13,9 +13,6 @@ class TransactionChecker {
         this.account = account.toLowerCase();
     }
 
-    web3.eth.getAccounts(function(error, result) {
-        $('#current-winer').html("Account:" + " " + result);
-    })
 
     async checkBlock() {
         let block = await this.web3.eth.getBlock('latest');
@@ -28,6 +25,7 @@ class TransactionChecker {
                 if (this.account == tx.to.toLowerCase()) {
                     console.log('Transaction found on block: ' + number);
                     console.log({ address: tx.to, value: this.web3.utils.fromWei(tx.value, 'ether'), timestamp: new Date() });
+                    $('#current-winer').html({ address: tx.to, value: this.web3.utils.fromWei(tx.value, 'ether'), timestamp: new Date() });
                 }
             }
         }
