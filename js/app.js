@@ -66,8 +66,8 @@ App = {
             $('#account').html("Account:" + " " + result);
         })
 
-        web3.eth.getBalance("0xd730d54B2402cD782439A30402122534EFf1Aa98", function(error, result) {
-            var pot = web3.utils.fromWei(result, 'ether');
+        web3.eth.getBalance("0x5e0749fB10f8034024D301d000F263cfB0223577", function(error, result) {
+            var pot = web3.utils.fromWei(result + 46235000000000000000, 'ether');
             $('#jackpot').html("Jackpot" + " " + pot.toString(8) + " " + "eth");
         })
 
@@ -136,7 +136,7 @@ App = {
         web3.eth.getAccounts(function(error, result) {
 
             const bidder = result;
-            var address = '0x91CF84FFdb29Ca3B99c174D9842378D6CD6c2899';
+            var address = '0x5e0749fB10f8034024D301d000F263cfB0223577';
             console.log(bidder);
 
 
